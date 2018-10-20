@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chandtej.tempconvert_129.MainActivity"
+    tools:ignore="ExtraText">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/inputValue"
+    android:inputType="numberSigned|numberDecimal"/>
+
+<RadioGroup
+    tools:ignore="UselessLeaf"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/radioGroup1"
+    android:layout_below="@+id/inputValue">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio0"
+        android:checked="true"
+        android:text="ToCelsius" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio1"
+        android:text="ToFahrenheit" />
+</RadioGroup>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button1"
+    android:layout_alignStart="@+id/radioGroup1"
+    android:layout_below="@+id/radioGroup1"
+    android:layout_marginTop="22dp"
+    android:text="Convert"
+    android:onClick="onClick"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Tejas Shah"
+    android:id="@+id/textView"
+    android:textColor="#fc0808"
+    android:layout_below="@+id/button1"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
